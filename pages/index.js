@@ -1,0 +1,6 @@
+const FrozenLake = require('../envs/FrozenLake')
+const QAgent = require('../QAgent')
+const environment = new FrozenLake(document.querySelector('environment'))
+const qAgent = new QAgent(environment)
+qAgent.train()
+qAgent.play(1000)

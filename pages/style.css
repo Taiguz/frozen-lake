@@ -1,0 +1,55 @@
+body{
+
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+environment{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+container{
+    display: flex;
+    flex-direction: column;
+}
+
+line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+cell{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    font-size: 42px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+cell.selected{
+    background-color: yellow;
+    border: 1px solid;
+}
+info{
+    margin-top: 20px;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+}
+span.red{
+    font-weight: bold;
+    color: red;
+}
+span.green{
+    font-weight: bold;
+    color: green;
+}
