@@ -1,4 +1,4 @@
-# frozen-lake
+# Frozen Lake With Q-Learning
 A Q-Learning algorithm tested with the game frozen lake.
 
 ## Tecnologies
@@ -20,7 +20,7 @@ Because the surface of the lake is frozen, the agent **have a chance to slip** a
 
 ## Results 
 With the parameters used on the project a Q-Table was obtained.
-![game screen](https://github.com/Taiguz/frozen-lake/blob/master/final-q-table.png "q-table")
+![game screen](https://github.com/Taiguz/frozen-lake/blob/master/table.png "q-table")
 
 This is the final Q-Table that represents the experiences the agent had during the training phase.
 
