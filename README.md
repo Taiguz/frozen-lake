@@ -26,7 +26,7 @@ This is the final Q-Table that represents the experiences the agent had during t
 
 Each column is a **probability** for the agent to take **that action** (go left, go right, go up and go down) on **that state**, based on the rewards it can get immediately and in the future. As [Bellman's equation](https://en.wikipedia.org/wiki/Bellman_equation) says.
 
-And each line is a state from the environment. For example 'S' is the starting state, state zero on the table. The agent has the probability of 72% to go down at that state. It learned at the training that going that way it's the best for **maximizing** rewards. Since the state five is a "H", hole, there's no chances to take any actions on that state. This is because the agent didn't experience nothing after that, for the reason that the game ends if he fall down on a hole. So every hole will be filled with zeros which are the starting chances.
+And each line is a state from the environment. For example 'S' is the starting state, state zero on the table. The agent has the probability of 74% to go right at that state. It learned at the training that going that way it's the best for **maximizing** rewards. Since the state five is a "H", hole, there's no chances to take any actions on that state. This is because the agent didn't experience nothing after that, for the reason that the game ends if he fall down on a hole. So every hole will be filled with zeros which are the starting chances.
 
 It was taken an average of rewards every thousand episodes.
 
