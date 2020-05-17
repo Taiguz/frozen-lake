@@ -23,7 +23,7 @@ module.exports = class QAgent {
         const stateSpaceSize = this.environment.observationSpace.number
         this.qTable = new Array(stateSpaceSize).fill(0).map(element => new Array(actionSpaceSize).fill(0))
         console.log('\nQ-Table:\n')
-        console.dir(this.qTable, { depth: 5 })
+        console.table(this.qTable)
     }
     train() {
         for (let episode = 0; episode < this.numberEpisodes; episode++) {
@@ -80,7 +80,7 @@ module.exports = class QAgent {
 
         //Printing update q-table
         console.log('\nUpdated Q-Table:\n')
-        console.dir(this.qTable, { depth: 5 })
+        console.table(this.qTable)
     }
     async play(timeIntervalBetweenActions = 500, maxEpisodes = 100, maxSteps = 100, fullExploit = true) {
         this.environment.canRender = true
